@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="./assets/icon/colors-icon.svg" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" />
+		<script src="https://kit.fontawesome.com/85a4b6508c.js" crossorigin="anonymous"></script>
+
+		<title>Project</title>
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="col-s-12">
+			<div>
+				<a href="index.html">
+					<img src="./assets/icon/colors-icon.svg" alt="web logo" />
+				</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="nav-active" href="project.html">Project</a></li>
+				</ul>
+			</div>
+			<ul>
+				<li><a href="contact.html">Contact me</a></li>
+			</ul>
+		</nav>
+		<!-- navbar -->
+
+		<div class="project-container">
+			<form onsubmit="addProject(event)">
+				<h1 style="margin-bottom: 2rem; text-align: center">ADD PROJECT</h1>
+				<div class="form-field">
+					<label for="name">Project Name</label>
+					<input type="text" id="name" name="name" class="form-input" />
+				</div>
+				<div class="form-date">
+					<div class="form-field">
+						<label for="startDate">Start Date</label>
+						<input type="date" id="startDate" name="start-date" class="form-input" />
+					</div>
+					<div class="form-field">
+						<label for="endDate">End Date</label>
+						<input type="date" id="endDate" name="end-date" class="form-input" />
+					</div>
+				</div>
+				<div class="form-field">
+					<label for="description">Description</label>
+					<textarea
+						id="description"
+						name="description"
+						rows="8"
+						placeholder="project description.."
+						required></textarea>
+				</div>
+				<div>
+					<label>Technologies</label>
+					<div class="tech-grid">
+						<div>
+							<input type="checkbox" id="nodeJs" name="nodejs" value="nodejs" />
+							<label for="nodeJs">Node Js</label>
+						</div>
+						<div>
+							<input type="checkbox" id="nextJs" name="nextjs" value="nextjs" />
+							<label for="nextJs">React Js</label>
+						</div>
+						<div>
+							<input type="checkbox" id="reactJs" name="reactjs" value="reactjs" />
+							<label for="reactJs">React Js</label>
+						</div>
+						<div>
+							<input type="checkbox" id="typeScript" name="typescript" value="typescript" />
+							<label for="typeScript">TypeScript</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-input" style="padding: 0.5rem">
+					<input type="file" id="fileUpload" name="fileupload" style="width: 100%" />
+				</div>
+			</form>
+			<button type="submit" class="button">Create Project</button>
+		</div>
+
+		<section class="list-container">
+			<hr style="width: 100%" />
+			<div id="projectGrid">
+				<div class="card">
+					<div class="card-img"><img src="./assets/image/blog-img.png" /></div>
+					<h3 class="card-title">Get yourself motivated</h3>
+					<div class="card-detail">
+						<p style="font-weight: 600">12 Jul 2024 22:30 WIB</p>
+						<p>Duration : 1 month</p>
+					</div>
+					<div class="card-body">
+						<p style="height: 100px">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum porro, illum totam
+							nostrum sit delectus nisi sint magni perspiciatis adipisci?
+						</p>
+					</div>
+					<div class="card-icon">
+						<img src="./assets/icon/node-js.svg" />
+						<img src="./assets/icon/next-js.svg" />
+						<img src="./assets/icon/react-js.svg" />
+						<img src="./assets/icon/typescript.svg" />
+					</div>
+					<div class="card-button">
+						<a href="project-detail.html" class="button">edit</a>
+						<a href="#" class="button">delete</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./js/project.js"></script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="./assets/icon/colors-icon.svg" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<title>Homepage</title>
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="col-s-12">
+			<div>
+				<a href="index.html">
+					<img src="./assets/icon/colors-icon.svg" alt="web logo" />
+				</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="project.html">Project</a></li>
+				</ul>
+			</div>
+			<ul>
+				<li><a class="nav-active" href="contact.html">Contact me</a></li>
+			</ul>
+		</nav>
+		<!-- navbar -->
+
+		<div class="form-container">
+        <form id="contactForm" class="contact-form">
+            <h1 style="margin-bottom: 2rem;">Contact Me</h1>
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" class="form-input" type="text" placeholder="your name.." required />
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" class="form-input" type="email" placeholder="example@mail.com" required />
+            </div>
+            <div class="form-field">
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" name="phoneNumber" class="form-input" type="number" placeholder="08xxx" maxlength="15" required/>
+            </div>
+            <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" class="form-input" required></input>
+            </div>
+            <div class="form-field">
+                <label for="skill">Skill</label>
+                <select id="skill" name="skill" class="form-input" required>
+                    <option value="Frontend">Frontend</option>
+					<option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label class="message-contact" for="message">Your Message</label>
+                <textarea id="message" name="message" rows="8" placeholder="your message.." required></textarea>
+            </div>
+            <button type="submit" class="button" style="float: right;">Submit</button>
+        </form>
+    </div>
+
+	<script src="./js/email-form.js"></script>
+
+	</body>
+</html>
